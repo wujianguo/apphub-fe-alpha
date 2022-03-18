@@ -10,4 +10,5 @@
 
 export const environment = {
   production: false,
+  external_url: 'http://localhost:8000/',
 };

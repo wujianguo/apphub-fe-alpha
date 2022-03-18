@@ -5,4 +5,5 @@
  */
 export const environment = {
   production: true,
+  external_url: 'https://apphub.libms.top/',
 };

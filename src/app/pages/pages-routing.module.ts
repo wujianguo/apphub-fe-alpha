@@ -11,6 +11,16 @@ const routes: Routes = [{
   component: PagesComponent,
   children: [
     {
+      path: 'application',
+      loadChildren: () => import('./application/application.module')
+        .then(m => m.ApplicationModule),
+    },
+    {
+      path: 'organization',
+      loadChildren: () => import('./organization/organization.module')
+        .then(m => m.OrganizationModule),
+    },
+    {
       path: 'dashboard',
       component: ECommerceComponent,
     },
